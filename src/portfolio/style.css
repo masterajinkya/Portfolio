@@ -1,0 +1,213 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+body {
+    background: #393838;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.navbar ul {
+    padding-top: 15px;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    display: inline;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.navbar ul button {
+    color: #bab5b5;
+}
+
+.navbar ul button:hover {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(80, 80, 80, 1) 0%, rgba(253, 237, 45, 1) 100%);
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.about {
+    margin-top: 100px;
+}
+
+.about img {
+    width: 100%;
+    margin-bottom: 75px;
+    filter: grayscale(0.5);
+
+
+}
+
+.about h2 {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+}
+
+.about h2 span {
+    color: #ffc107;
+    font-size: 3.5rem;
+    font-weight: 600;
+
+
+}
+
+.about h1 {
+    outline-color: #ffc107;
+    display: inline;
+    border-bottom: 3px solid #ffc107;
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-discription {
+    padding: 0 75px;
+}
+
+.summry ol {
+    padding: 0 0 0 100px;
+    margin-top: 30px;
+    color: #bab5b5;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.skills {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.skills h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+
+}
+
+.skills-card {
+    background-color: #3d3e42;
+    border-radius: 20px;
+    padding: 40px 60px;
+    margin-top: 30px;
+}
+
+.skills-card:hover {
+    background-color: #ffc107;
+}
+
+.skills-card img {
+    object-fit: cover;
+}
+
+.skills-card h3 {
+    font-size: 20px;
+}
+
+
+.experience h5 {
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+
+.experience-div h6 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.experience-div p {
+    color: #d4cece;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+
+ul {
+    list-style: none;
+    /* Remove default list item markers */
+}
+
+.round li::before {
+    content: "a";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: -30px;
+    margin-top: 12px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffc107;
+    color: #ffc107;
+    border-radius: 50%;
+    font-size: 1px;
+    box-shadow: 0px 0px 20px 5px #fec86a;
+
+}
+
+.round2 p::before {
+    content: "a";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-left: -20px;
+    margin-top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1px;
+    /* box-shadow: 0px 0px 20px 5px #fff; */
+
+}
+
+.contact-me {
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.contact-me h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+}
+.contact{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 30px;
+}
