@@ -44,7 +44,7 @@ function NavBar() {
         <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className='img-fluid' />
         <ul className=''>
           <li><button onClick={handleAbout} className='btn'>About</button></li>
-          <li><button onClick={handleExp} className='btn mx-3'>Experience</button></li>
+          <li><button onClick={handleExp} className='btn mx-2 mx-sm-3'>Experience</button></li>
           <li><button onClick={handlecontact} className='btn'>Contact</button></li>
         </ul>
         <button onClick={handleContactClick} className='btn btn-warning d-none d-md-block'>Contact Me</button>

@@ -17,19 +17,19 @@ function About() {
 
       <div className='about'>
         <div className='row '>
-          <div className='col-6'>
+          <div className='col-6 col-sm-6'>
             <div className='about-discription'>
               <div>
-                <h2>I'M <span>Ajinkya Giri</span> React Developer & Web Developer</h2>
+                <h2>I'M <span>Ajinkya Giri</span> <br></br> React Developer & Web Developer</h2>
 
-                <button onClick={handleContactClick} className='btn btn-warning d-none d-md-block mt-5'>Contact Me</button>
+                <button onClick={handleContactClick} className='btn btn-warning  mt-2 mt-sm-5'>Contact Me</button>
 
               </div>
 
             </div>
 
           </div>
-          <div className='col-6'>
+          <div className='col-6 col-sm-6'>
             <img src='https://i.ibb.co/2nq3xhX/IMG-20231202-091358-removebg-1.png' className='img-fluid ' />
           </div>
         </div>
