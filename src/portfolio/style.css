@@ -212,6 +212,7 @@ justify-content: space-between;
 align-items: center;
 gap: 30px;
 }
+<<<<<<< HEAD
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html{
@@ -260,3 +261,14 @@ gap: 30px;
 @media only screen and (min-width: 1200px) {
 
 }
+=======
+
+
+@media only screen and (max-width: 600px) {
+  . navbar{
+    padding: 0 20px;
+  }
+}
+
+
+>>>>>>> e61c86651f6d1b766ce4a497afd526f9702ae8d3
