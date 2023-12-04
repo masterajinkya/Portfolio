@@ -25,7 +25,7 @@ function Contact() {
       <div className='contact'>
         <button onClick={handleContactClick} className='btn btn-warning  mt-5'><i class="fa-regular fa-envelope mx-2"></i>ajinkyagiri62@gmail.com</button>
         <button onClick={handleWhatsapp} className='btn btn-warning  mt-5'><i class="fa-brands fa-whatsapp mx-2"></i>What'sApp</button>
-        <button className='btn btn-warning  mt-5'><i class="fa-regular fa-phone mx-2"></i>7888107402</button>
+        <button className='btn btn-warning  mt-5'><i class="fa-brands fa-phone mx-2"></i>7888107402</button>
       </div>
     </footer>
 

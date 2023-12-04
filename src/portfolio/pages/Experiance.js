@@ -29,7 +29,7 @@ function Experiance() {
 
           <div className='px-3 experience-div mb-5'>
             <ul className='round'>
-              <li><h6>Project name : Hospital Management System </h6>
+              <li><h6>Project name : Hospital Management System - Dec-22 to Present</h6>
                 <p className='mb-3'>A Hospital Management System (HMS) project, developed as a web-based application, aims to revolutionize healthcare facility management by enhancing administrative and medical processes. This comprehensive system encompasses a range of modules designed to optimize healthcare operations and improve patient care.</p></li>
               <div className='exp-discription'>
                 <ul className='round2'>

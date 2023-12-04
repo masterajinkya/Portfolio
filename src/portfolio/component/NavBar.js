@@ -8,6 +8,12 @@ import Contact from '../pages/Contact';
 
 function NavBar() {
   const navigate = useNavigate()
+
+
+  const handleClick =()=>{
+    navigate("/")
+  }
+
   const handleContactClick = () => {
     const emailAddress = 'ajinkyagiri62@gmail.com'; // Replace with your email address
     const subject = 'Interested in contacting you'; // Replace with your desired email subject
@@ -20,39 +26,35 @@ function NavBar() {
     window.location.href = mailtoLink;
   };
 
+  const component1Ref = useRef(null);
+  const component2Ref = useRef(null);
+  const component3Ref = useRef(null);
 
-  const handleAbout = () => {
-    scroll.scrollTo(500, { smooth: true }); // Adjust the value as needed
+
+  const scrollToComponent = (ref) => {
+    ref?.current?.scrollIntoView({ behavior: 'smooth' });
   };
-  const handleExp = () => {
-    scroll.scrollTo(2250, { smooth: true }); // Adjust the value as needed
-  };
-  const handlecontact = () => {
-    scroll.scrollTo(3500, { smooth: true }); // Adjust the value as needed
-  };
-
-
-
-
 
 
   return (
     <>
     <div className='container'>
 
-      <nav  onClick={handleAbout}  className=' navbar fixed-top '>
+      <nav  onClick={handleClick}  className=' navbar fixed-top '>
         <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className='img-fluid' />
         <ul className=''>
-          <li><button onClick={handleAbout} className='btn'>About</button></li>
-          <li><button onClick={handleExp} className='btn mx-2 mx-sm-3'>Experience</button></li>
-          <li><button onClick={handlecontact} className='btn'>Contact</button></li>
+          <li><button onClick={() => scrollToComponent(component1Ref)} className='btn'>About</button></li>
+          <li><button onClick={() => scrollToComponent(component2Ref)} className='btn mx-2 mx-sm-3'>Experience</button></li>
+          <li><button onClick={() => scrollToComponent(component3Ref)} className='btn'>Contact</button></li>
         </ul>
         <button onClick={handleContactClick} className='btn btn-warning d-none d-md-block'>Contact Me</button>
       </nav>
-      <About id="about" />
-      <Experiance id="experiance" />
+
+      <div ref={component1Ref}><About  /></div>
+      <div ref={component2Ref}><Experiance  /></div>
     </div>
-      <Contact id='contact' />
+    <div ref={component3Ref}><Contact id='contact' /></div>
+
       </>
   )
 }
