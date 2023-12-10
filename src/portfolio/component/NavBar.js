@@ -42,15 +42,15 @@ function NavBar() {
 
       <nav  onClick={handleClick}  className=' navbar fixed-top '>
         <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className='img-fluid' />
-        <ul className=''>
-          <li><button onClick={() => scrollToComponent(component1Ref)} className='btn'>About</button></li>
-          <li><button onClick={() => scrollToComponent(component2Ref)} className='btn mx-2 mx-sm-3'>Experience</button></li>
-          <li><button onClick={() => scrollToComponent(component3Ref)} className='btn'>Contact</button></li>
+        <ul className='p-0'>
+          <li><a onClick={() => scrollToComponent(component1Ref)} className=''>About</a></li>
+          <li><a onClick={() => scrollToComponent(component2Ref)} className=' mx-4 mx-sm-5'>Experience</a></li>
+          <li><a onClick={() => scrollToComponent(component3Ref)} className=''>Contact</a></li>
         </ul>
         <button onClick={handleContactClick} className='btn btn-warning d-none d-md-block'>Contact Me</button>
       </nav>
 
-      <div ref={component1Ref}><About  /></div>
+      <div ref={component1Ref} ><About  /></div>
       <div ref={component2Ref}><Experiance  /></div>
     </div>
     <div ref={component3Ref}><Contact id='contact' /></div>

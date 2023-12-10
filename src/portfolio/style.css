@@ -9,11 +9,15 @@ body {
 .navbar {
     padding-left: 100px;
     padding-right: 100px;
-
+    background: #2d2c2c;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul {
-    padding-top: 15px;
+    margin-top: 7px;
 }
 
 .navbar ul li {
@@ -25,23 +29,32 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.navbar ul button {
-    color: #ffffff;
+.navbar a {
+    padding: 0;
+    text-decoration: none;
+    color: #bab5b5;
+    cursor: pointer;
+    font-weight: 400;
 }
 
-.navbar ul button:hover {
-    /* color: #fff; */
-    color: #ffc107;
+.navbar a:hover {
+    color: #fff;
+}
+
+.navbar button {
+    margin-top: -12px
 }
 
 .navbar img {
     width: 50px;
     height: 50px;
     object-fit: cover;
+    padding: 0;
+    margin-top: -12px;
 }
 
 .about {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .about img {
@@ -196,7 +209,7 @@ ul {
 
 .contact-me {
     width: 100vw;
-    padding: 100px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +242,7 @@ ul {
     .navbar {
         padding-left: 10px;
         padding-right: 10px;
-
+        height: 50px;
     }
 
     .navbar ul li {
@@ -252,10 +265,12 @@ ul {
         width: 35px;
         height: 35px;
         object-fit: cover;
+        margin-top: 2px;
     }
 
     .about {
-        margin-top: 70px;
+        padding-top: 70px;
+
     }
 
     .about-dec {
@@ -276,36 +291,139 @@ ul {
 
     .skills-card img {
         /* padding: 0; */
-    padding:  0;
+        padding: 0;
 
         width: 50px;
         height: 50px;
     }
+
     .experience h5 {
         font-size: 20px;
 
     }
+
     .experience h6 {
         font-size: 18px;
     }
+
     .experience p {
         font-size: 16px;
     }
-    .contact-me h1{
+
+    .contact-me h1 {
         font-size: 3rem;
     }
-    .contact-me{
+
+    .contact-me {
         padding: 50px;
     }
 
+    .contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact .mr-3 {
+        margin-right: 10px;
+    }
+    .contact .ml-3 {
+        margin-left: 10px;
+    }
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 80%;
+    }
+    .navbar {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .summry ol {
+        padding: 0 0 0 30px;
+    }
+
+    .navbar img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        margin-top: 4px;
+    }
+.container{
+    width: 600px;
+    max-width: 600px;
+}
+    .about {
+        padding-top: 70px;
+    }
+
+    .about-dec {
+        margin-bottom: 50px;
+    }
+
+    .about-discription h2 span {
+        font-size: 2.8rem;
+    }
+
+    .about h1 {
+        font-size: 2.8rem;
+    }
+
+    .skills h1 {
+        font-size: 2.8rem;
+    }
+
+    .skills-card img {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience h5 {
+        font-size: 20px;
+
+    }
+
+    .experience h6 {
+        font-size: 18px;
+    }
+
+    .experience p {
+        font-size: 16px;
+    }
+
+    .contact-me h1 {
+        font-size: 3rem;
+    }
+
+    .contact-me {
+        padding: 50px;
+    }
+
+    .contact {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact .mr-3 {
+        margin-right: 10px;
+    }
+    .contact .ml-3 {
+        margin-left: 10px;
+    }
+
+
+    .about-discription {
+        padding: 0 0 0 10px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
