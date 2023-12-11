@@ -240,8 +240,8 @@ ul {
     }
 
     .navbar {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         height: 50px;
     }
 
@@ -334,16 +334,16 @@ ul {
 }
 
 
-
+/* (min-width: 361px) and (max-width: 375px) */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px ) and (max-width:768px) {
     html{
         font-size: 80%;
     }
     .navbar {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .summry ol {
         padding: 0 0 0 30px;
@@ -355,10 +355,7 @@ ul {
         object-fit: cover;
         margin-top: 4px;
     }
-.container{
-    width: 600px;
-    max-width: 600px;
-}
+
     .about {
         padding-top: 70px;
     }
@@ -424,9 +421,36 @@ ul {
         padding: 0 0 0 10px;
     }
 }
-
+@media only screen and (min-width: 768px) {
+    .navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-discription {
+        padding: 0 ;
+    }
+    .about-discription span{
+        display: block;
+        margin-bottom: -30px;
+    }
+}
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .about-discription span{
+        display: inline-block;
+        margin-bottom: 7px;
+
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .container{
+        width: 1140px;
+        max-width: 1140px;
+    }
+}

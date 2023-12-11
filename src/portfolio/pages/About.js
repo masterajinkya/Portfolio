@@ -1,33 +1,29 @@
 import React from 'react'
 
 function About() {
+
   const handleContactClick = () => {
-    const emailAddress = 'ajinkyagiri62@gmail.com'; // Replace with your email address
-    const subject = 'Interested in contacting you'; // Replace with your desired email subject
+    const emailAddress = 'ajinkyagiri62@gmail.com';
+    const subject = 'Interested in contacting you';
     const body = 'Hello, I would like to get in touch with you.';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
-
     window.location.href = mailtoLink;
   };
+
   return (
     <>
-
       <div className='about'>
         <div className='row about-dec '>
           <div className='col-6 col-sm-6'>
             <div className='about-discription '>
               <div>
                 <h2>I'M <br className='d-sm-none'></br><span>Ajinkya Giri</span> <br></br> React Developer & Web Developer</h2>
-
                 <button onClick={handleContactClick} className='btn btn-warning  mt-2 mt-sm-5'>Contact Me</button>
-
               </div>
-
             </div>
-
           </div>
           <div className='col-6 col-sm-6 '>
             <img src='https://i.ibb.co/2nq3xhX/IMG-20231202-091358-removebg-1.png' className='img-fluid ' />

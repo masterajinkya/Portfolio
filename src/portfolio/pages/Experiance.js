@@ -24,7 +24,6 @@ function Experiance() {
                 </ul>
               </div>
             </ul>
-
           </div>
 
           <div className='px-3 experience-div mb-5'>

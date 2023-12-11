@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contact() {
   const handleContactClick = () => {
-    const emailAddress = 'ajinkyagiri62@gmail.com'; // Replace with your email address
-    const subject = 'Interested in contacting you'; // Replace with your desired email subject
+    const emailAddress = 'ajinkyagiri62@gmail.com';
+    const subject = 'Interested in contacting you';
     const body = 'Hello, I would like to get in touch with you.';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(
