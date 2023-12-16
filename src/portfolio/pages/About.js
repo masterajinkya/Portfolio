@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function About() {
 
@@ -32,7 +32,7 @@ function About() {
         <div className='summry'>
           <h1>About</h1>
           <ol>
-            <li>2.10+ years of experience in Frontend Development</li>
+            <li>3+ years of experience in Frontend Development</li>
             <li>Design and develop user interface components using React.js</li>
             <li>Thorough understanding of React.js and its core principles</li>
             <li>Optimize components for maximum performance across a vast array of
@@ -50,7 +50,7 @@ function About() {
         <h1>My Skills</h1>
         <div className='row'>
           <div className='col-6 col-md-4 col-lg-3'>
-            <div className='skills-card'>
+            <div className='skills-card '>
               <img src='https://i.ibb.co/NFspmcq/react.png' className='img-fluid' />
               <h3 className='mt-4 text-white'>React.js</h3>
             </div>
